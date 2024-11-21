@@ -1,6 +1,7 @@
 # Arev Personal Assistant
 
-<img src="[drawing.jpg](https://github.com/user-attachments/assets/0a6e46a4-398a-4992-94d1-25cfb538b793)" alt="Arev_Logo" width="200"/>
+<img src="[Arev_Logo.png](https://github.com/user-attachments/assets/e2d9c75b-a926-4915-a66f-3f953ac99605)" alt="Arev_Logo" width="200"/>
+
 
 Arev is an AI-powered personal assistant that integrates GraphQL APIs, a machine learning backend, and a user-friendly React frontend. It leverages TensorFlow for task prioritization, Hugging Face Transformers for natural language understanding, and is deployed using Docker and Kubernetes.
 

@@ -1,5 +1,4 @@
-// backend/taskController.js
-import { post } from 'axios';
+const axios = require('axios');
 
 let tasks = [];
 
@@ -7,7 +6,7 @@ async function addTask(title, dueDate) {
   const taskFeatures = [/* Extract features from title and dueDate */];
 
   // Call the Python service for priority prediction
-  const response = await post('http://python-service:5000/predict', {
+  const response = await axios.post('http://python-service:5000/predict', {
     features: taskFeatures,
   });
 
@@ -28,4 +27,4 @@ function getTasks() {
   return tasks;
 }
 
-export default { addTask, getTasks };
+module.exports = { addTask, getTasks };

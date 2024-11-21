@@ -1,0 +1,15 @@
+{
+    "name": "arev-backend",
+    "version": "1.0.0",
+    "description": "GraphQL API Backend for Arev Personal Assistant",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "apollo-server": "^3.5.0",
+      "graphql": "^15.5.0",
+      "axios": "^0.21.1"
+    }
+  }
+  

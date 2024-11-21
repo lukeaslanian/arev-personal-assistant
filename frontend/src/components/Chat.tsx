@@ -1,4 +1,3 @@
-// frontend/src/components/Chat.tsx
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -7,7 +6,7 @@ const Chat: React.FC = () => {
   const [chatHistory, setChatHistory] = useState<string[]>([]);
 
   const sendMessage = async () => {
-    const response = await axios.post<{ response: string }>('http://python-service:5000/chat', { message });
+    const response = await axios.post('http://python-service:5000/chat', { message });
     setChatHistory([...chatHistory, `You: ${message}`, `Arev: ${response.data.response}`]);
     setMessage('');
   };

@@ -1,5 +1,4 @@
+# requirements.txt
 flask
-tensorflow-macos
-tensorflow-metal
 transformers
 torch

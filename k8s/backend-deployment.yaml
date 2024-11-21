@@ -1,4 +1,3 @@
-# k8s/backend-deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,6 +14,7 @@ spec:
     spec:
       containers:
         - name: arev-backend
-          image: your-dockerhub-username/arev-backend:latest
+          image: lukeaslanian/arev-backend:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 4000

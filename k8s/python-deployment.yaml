@@ -1,4 +1,3 @@
-# k8s/python-deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,6 +14,7 @@ spec:
     spec:
       containers:
         - name: arev-python-service
-          image: your-dockerhub-username/arev-python-service:latest
+          image: lukeaslanian/arev-python-service:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000

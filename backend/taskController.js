@@ -6,9 +6,11 @@ async function addTask(title, dueDate) {
   const taskFeatures = [/* Extract features from title and dueDate */];
 
   // Call the Python service for priority prediction
-  const response = await axios.post('http://python-service:5000/predict', {
+  // backend/taskController.js
+  const response = await axios.post('http://localhost:5000/predict', {
     features: taskFeatures,
   });
+  
 
   const priority = Math.round(response.data.priority);
 

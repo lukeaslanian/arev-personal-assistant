@@ -2,3 +2,4 @@ flask
 transformers==4.25.1
 torch
 pytest
+tensorflow

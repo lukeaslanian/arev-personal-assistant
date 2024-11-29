@@ -19,7 +19,10 @@ jobs:
       with:
         python-version: '3.9'
 
+    - name: List files in the directory
+      run: ls -la python_service
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r python_service/requirements.txt
